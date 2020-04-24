@@ -1,4 +1,4 @@
-name: 'Github auto tagger'
+name: 'Auto tagger'
 description: 'Auto tag your commit.'
 author: "qianfeiqianlan"
 inputs:
