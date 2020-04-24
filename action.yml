@@ -1,0 +1,21 @@
+name: 'Github auto tagger'
+description: 'Auto tag your commit.'
+author: "qianfeiqianlan"
+inputs:
+  major-version:
+    description: 'The tag major version'
+    required: false
+    default: '0'
+  minor-version:
+    description: 'The tag minor version'
+    required: false
+    default: '0'
+outputs:
+  newTag:
+    description: 'The new generated tag'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: "tag"
+  color: "green"
