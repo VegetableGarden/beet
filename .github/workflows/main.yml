@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
     # auto tag
     - name: Github auto tagger
-      uses: VegetableGarden/beet@0.0.1
+      uses: VegetableGarden/beet@0.0.2
       with:
         # The tag major version
         major-version: 0 # optional, default is 0
