@@ -16,7 +16,7 @@ async function main() {
         return it.match(validTag);
     }).map((it) => {
         const [major,minor,patch] = it.split('.');
-        return major * 1000000 + minor * 1000 + patch;
+        return Number(major) * 1000000 * + Number(minor) * 1000 + Number(patch);
     }).reduce((maxVersion, currentVersion) => (currentVersion > maxVersion ? currentVersion : maxVersion), 0);
 
     const defaultVersion = (majorVersion + minorVersion) === 0 ? 1 :(majorVersion * 1000000 + minorVersion * 1000);
